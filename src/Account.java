@@ -6,13 +6,23 @@
  */
 
 public class Account {
+    private static int lastId = 0;
+    private final int Id;
     String firstName = "?";
-    String LastName = "?";
+    String lastName = "?";
     double balance = 0;
-    public Account(String firstName,String lastName) {
+
+    public Account() {
+        this.Id = ++lastId;
+        this.firstName = "";
+        this.lastName = "";
+        this.balance = 0.0;
+    }
+    public Account(String firstName, String lastName) {
+        this.Id = ++lastId;
         this.firstName = firstName;
-        this.LastName = lastName;
-        this.balance = 0;
+        this.lastName = lastName;
+        this.balance = 0.0;
     }
     public double getBalance() {
         return balance;
@@ -21,7 +31,7 @@ public class Account {
         this.firstName = firstName;
     }
     public void setLastName(String lastName) {
-        this.LastName = lastName;
+        this.lastName = lastName;
     }
     public void deposit(double amount) {
         this.balance += amount;
