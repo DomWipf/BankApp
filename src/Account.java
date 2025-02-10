@@ -10,7 +10,8 @@ public class Account {
     private final int Id;
     String firstName = "?";
     String lastName = "?";
-    double balance = 0;
+    double balance = 0.0;
+
 
     public Account() {
         this.Id = ++lastId;
@@ -25,7 +26,7 @@ public class Account {
         this.balance = 0.0;
     }
     public double getBalance() {
-        return balance;
+        return this.balance;
     }
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -36,4 +37,13 @@ public class Account {
     public void deposit(double amount) {
         this.balance += amount;
     }
+    @Override
+    public String toString() {
+        return "ID: "+this.Id+"\nFirst Name: "+this.firstName+"\nLast Name: "+this.lastName;
+    }
+    public static void main(String[] args) {
+        Account account = new Account("John", "Smith");
+        System.out.println(account.toString());
+    }
+
 }
