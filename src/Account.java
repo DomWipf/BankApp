@@ -1,6 +1,5 @@
 /**
  * The Account class. Used to create the Account class.
- *
  * @author Brock Koranda Dom Wipf
  * @version beta 0.1
  * @since 2025.02.10
