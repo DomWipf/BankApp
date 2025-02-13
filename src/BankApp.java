@@ -105,7 +105,7 @@ public class BankApp {
         try {
             account.deposit(amount);
             System.out.print("Deposit successful! ");
-            System.out.printf("Current balance: %,.2f\n", account.getBalance());
+            System.out.printf("Current balance: $%,.2f\n", account.getBalance());
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -121,10 +121,10 @@ public class BankApp {
         try {
             account.withdrawal(amount);
             System.out.print("Withdrawal successful! ");
-            System.out.printf("Current balance: %,.2f\n", account.getBalance());
+            System.out.printf("Current balance: $%,.2f\n", account.getBalance());
         } catch (Exception e) {
             System.out.print(e.getMessage());
-            System.out.printf("Current balance: %,.2f\n", account.getBalance());
+            System.out.printf("Current balance: $%,.2f\n", account.getBalance());
         }
         // end
     }
