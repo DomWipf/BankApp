@@ -44,6 +44,7 @@ Process finished with exit code 0
 
 </pre>
 
+![gif](https://github.com/DomWipf/BankApp/blob/master/BankAppBankApp.java2025-02-1322-18-48-ezgif.com-video-to-gif-converter.gif)
 
 ***
 ## Getting Started
@@ -55,7 +56,7 @@ Process finished with exit code 0
 * Press the green run button
 ***
 ## Authors
-Brock Koranda and Dominic Wipf
+[Brock Koranda](https://github.com/brockk5813) and [Dominic Wipf](https://github.com/DomWipf)
 
 GitHub [Here](https://github.com/DomWipf/BankApp)
 ***
