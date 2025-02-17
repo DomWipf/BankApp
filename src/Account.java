@@ -4,26 +4,31 @@ import java.util.regex.Pattern;
 /**
  * The Account class. Used to create the Account class.
  * @author Brock Koranda Dom Wipf
- * @see <a href="https://github.com/DomWipf/BankApp">...</a>
  * @version beta 0.1
  * @since 2025.02.10
+ * @see <a href="https://github.com/DomWipf/BankApp">...</a>
  */
 public class Account {
+    //keeps last account number used
     private static int lastId = 0;
+    //unique ID for the account
     private final int Id;
+    //first name of the account
     String firstName = "?";
+    //last name of the account
     String lastName = "?";
+    //balance of the account
     double balance = 0.0;
 
 
     public Account() {
         this.Id = ++lastId;
-        this.firstName = "";
-        this.lastName = "";
+        this.firstName = "Unknown";
+        this.lastName = "Unknown";
         this.balance = 0.0;
     }
     public Account(String firstName, String lastName) {
-        this();
+        this(); //calls default constructor
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -69,7 +74,7 @@ public class Account {
     }
     @Override
     public String toString() {
-        return "ID: "+this.Id+"\nFirst Name: "+this.firstName+"\nLast Name: "+this.lastName;
+        return "ID #"+this.Id+": "+this.firstName+this.lastName;
     }
 
 }
